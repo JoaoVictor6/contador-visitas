@@ -16,7 +16,7 @@ app.use('/counter.png', (req, res, next) => {
 })
 app.use(express.static(path.resolve(__dirname, 'static')))
 
-
-app.listen(3003, () => console.log(`
-  ${chalk.redBright('㊋:')} ${chalk.greenBright('Server was running in: http://localhost:3003')}
+const port = process.env.PORT || 3003
+app.listen(port, () => console.log(`
+  ${chalk.redBright('㊋:')} ${chalk.greenBright(`Server was running in: http://localhost:${port}`)}
 `))
