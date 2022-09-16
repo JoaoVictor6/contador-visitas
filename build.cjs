@@ -10,7 +10,7 @@ const { signal } = controller;
 const mainProcess = exec(`
   rm -rf build
   && mkdir -p build/services/cache build/services/counterPanelCreator/ build/static 
-  && cp src/server.js build/index.js
+  && cp src/index.js build/index.js
   && cp src/services/cache/index.js build/services/cache/index.js
   && cp src/services/counterPanelCreator/index.js build/services/counterPanelCreator/index.js
 `.replaceAll('\n', ' '))
