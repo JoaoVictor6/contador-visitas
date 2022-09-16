@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node build/index.js",
+    "build": "node build.cjs"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,12 @@
     "chalk": "4",
     "express": "^4.18.1",
     "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "cssnano": "^5.1.13",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0"
   }
 }
