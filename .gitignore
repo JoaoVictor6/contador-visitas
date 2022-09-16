@@ -133,3 +133,4 @@ dist
 # custom
 
 src/static/counter.png
+build
