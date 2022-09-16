@@ -27,10 +27,10 @@ algum evento para criar uma nova imagem. Essa parte foi bem tranquila, o node-ca
 tem support para event emitters. :)
 
 ### Pontos a melhorar
-- [ ] No momento o node-cache é disparado indiscriminadamente, isso **desperdiça** 
+- [x] No momento o node-cache é disparado indiscriminadamente, isso **desperdiça** 
 processamento de uma forma bem tosca. Acredito que uma mecanismo para armazenar o 
 antigo tamanho da "lista", comparar com o atual e caso houver diferenças executar 
-a função para gerar uma nova imagem seria uma otima abordagem.
+a função para gerar uma nova imagem seria uma otima abordagem. __Resolvido no pr [#1](https://github.com/JoaoVictor6/contador-visitas/pull/1)__
 
 ### Pontos interessantes
 Eu não soube qual seria a melhor forma de otimizar o html e css pra poder rodar em 
