@@ -7,18 +7,18 @@
  - [PostCSS](https://postcss.org/)
 
 ### Escolhas
-No inicio do desafio achei que seria interessante fazer com [nextJS]() e usar
-middlewares pra poder computar as visitas, porém com o tempo mudei de opinião. Ter 
+No inicio do desafio, achei que seria interessante fazer com [nextJS](nextjs.org) e usar
+middlewares pra poder computar as visitas. Porém com o tempo mudei de opinião... Ter 
 que usar um framework dessa potência pra entregar uma pádina estática com um 
 contador me parece desperdicio. Keep it simple, isso seria apenas uma pagina 
 com um contador de visitas, qual a necessidade de um framework tão complexo? 
 Optei por criar uma API que server uma pagina estática.
 
 Sobre a contador, a primeiro momento pensei em ter um middleware para englobar toda a api
-e mandar o endereço do client pra algum lugar. Assim s'precisaria de uma rota para 
+e mandar o endereço do client pra algum lugar. Assim apenas precisaria de uma rota para 
 disponibilizar os dados. Não achei essa idéia muito boa, vale a pena deixar essa 
 responssabilidade toda no client somente pra gerar um contador? Procurei por resposatas mais 
-interessantes e cheguei no incrivel [ImageMagick](https://imagemagick.org/index.php). Serio, essa prte foi muito legal!
+interessantes e cheguei no incrivel [ImageMagick](https://imagemagick.org/index.php). Serio, essa parte foi muito legal!
 
 Com o ImageMagick a estratégia era ter uma imagem de base e uma função para 
 executar um processo onde a CLI do ImageMagick geraria a imagem, 
@@ -34,9 +34,13 @@ a função para gerar uma nova imagem seria uma otima abordagem. __Resolvido no 
 
 ### Pontos interessantes
 Eu não soube qual seria a melhor forma de otimizar o html e css pra poder rodar em 
-outros dispositivos, optei por criar um pequeno script JS pra criar uma pasta build, 
-rodar o postCSS e fazer a mágica. Não mexi em nada do código JS kkkkkk, tinha até 
-tentando utilizar um babel porém não via muita necessidade.
+outros dispositivos, optei por criar um pequeno script JS para gerar uma pasta "__build__", 
+rodar o postCSS e fazer a "mágica". Não mexi em nada do código JS kkkkkk, tinha até 
+tentado utilizar o babel porém não via muita necessidade.
+
+### Resultado final(eu acho)
+![Fluxograma](/.github/assets/flowchart.png "Fluxo do código")
+Notei que usando o IP do usuário ficava bastante inserto, dei uma lida sobre [cookies no MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Cookies) e achei que se encaixa totalmente nesse contexto. O resultado ficou bem legal :)
 
 ## Bora conversar!!
 Caso queira fazer alguma sugestão, mostrar alguma alternativa ou tecer criticas 
