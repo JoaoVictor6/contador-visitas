@@ -40,6 +40,7 @@ tentado utilizar o babel porém não via muita necessidade.
 
 ### Resultado final(eu acho)
 ![Fluxograma](/.github/assets/flowchart.png "Fluxo do código")
+
 Notei que usando o IP do usuário ficava bastante inserto, dei uma lida sobre [cookies no MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Cookies) e achei que se encaixa totalmente nesse contexto. O resultado ficou bem legal :)
 
 ## Bora conversar!!
